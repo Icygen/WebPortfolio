@@ -22,6 +22,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Inject Web3Forms config from secret
+        env:
+          WEB3FORMS_ACCESS_KEY: ${{ secrets.WEB3FORMS_ACCESS_KEY }}
+        run: |
+          if [ -z "$WEB3FORMS_ACCESS_KEY" ]; then
+            echo "::error::Add repository secret WEB3FORMS_ACCESS_KEY (your Web3Forms access key)."
+            exit 1
+          fi
+          cat > js/form-config.js <<EOF
+          window.PORTFOLIO_FORM = {
+            accessKey: "${WEB3FORMS_ACCESS_KEY}",
+          };
+          EOF
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

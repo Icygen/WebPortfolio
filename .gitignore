@@ -1,2 +1,2 @@
-# Optional: uncomment to keep your Web3Forms key out of public GitHub
-# js/form-config.js
+# Local only — injected at deploy from GitHub Actions secret WEB3FORMS_ACCESS_KEY
+js/form-config.js

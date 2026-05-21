@@ -37,6 +37,19 @@ Then visit `http://localhost:8080`.
 1. Drag and drop the `WebPortfolio` folder at [netlify.com](https://www.netlify.com/).
 2. Or connect your GitHub repo for automatic deploys.
 
+## Contact form (Web3Forms)
+
+1. Get a free access key at [web3forms.com](https://web3forms.com).
+2. **GitHub (live site):** Repo → **Settings → Secrets and variables → Actions** → New secret  
+   - Name: `WEB3FORMS_ACCESS_KEY`  
+   - Value: your access key  
+3. **Local preview:**  
+   ```powershell
+   copy js\form-config.example.js js\form-config.js
+   ```  
+   Edit `js/form-config.js` and paste your key (this file is not pushed to GitHub).
+4. In Web3Forms dashboard, allow domain: `icygen.github.io`
+
 ## Customize
 
 - Add a profile photo in `images/` and update the hero section in `index.html`.
