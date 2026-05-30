@@ -521,10 +521,6 @@ a:hover {
   transition: transform 0.35s ease;
 }
 
-.project-card:last-child .project-shot img {
-  object-position: center;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .project-shot:hover img {
     transform: scale(1.03);
