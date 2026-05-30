@@ -90,9 +90,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <span id="top" class="top-anchor" tabindex="-1" aria-hidden="true"></span>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" id="top">
+    <header class="site-header">
       <div class="container header-inner">
         <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">G</span> Genrei G. Vargas</a>
         <button
@@ -985,6 +986,16 @@
         <a href="#top" class="back-to-top">Back to top</a>
       </div>
     </footer>
+
+    <button
+      type="button"
+      class="back-to-top-fab"
+      id="back-to-top"
+      aria-label="Back to top"
+      hidden
+    >
+      <span aria-hidden="true">↑</span>
+    </button>
 
     <script src="js/site-config.js"></script>
     <script src="js/form-config.js"></script>
