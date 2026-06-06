@@ -7,7 +7,7 @@ Professional single-page portfolio for virtual assistance, data entry, and admin
 - `index.html` — Main portfolio page
 - `css/style.css` — Styles
 - `js/main.js` — Mobile navigation
-- `assets/Genrei_Updated.Resume.pdf` — Downloadable resume
+- `assets/GenreiVargas_RESUME.pdf` — Downloadable resume
 
 ## Preview locally
 
@@ -54,4 +54,4 @@ Then visit `http://localhost:8080`.
 
 - Add a profile photo in `images/` and update the hero section in `index.html`.
 - Update certification details under Education when you have dates or platform names.
-- Replace `assets/Genrei_Updated.Resume.pdf` whenever you update your resume.
+- Replace `assets/GenreiVargas_RESUME.pdf` whenever you update your resume.
