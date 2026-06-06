@@ -309,45 +309,66 @@ a:hover {
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .hero-intro {
     flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    margin-bottom: 1.35rem;
+    align-items: stretch;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
-  .hero-title-row {
-    justify-content: center;
+  .hero-photo {
+    align-self: center;
   }
 
-  .hero-tagline {
-    margin-inline: auto;
-    max-width: 100%;
+  .hero-photo img {
+    width: 10.5rem;
   }
 
-  .hero-body {
+  .hero-intro-text {
+    width: 100%;
     text-align: left;
   }
 
-  .hero-highlights {
-    margin-inline: auto;
+  .hero-title-row {
+    justify-content: flex-start;
   }
 
-  .hero-open,
-  .availability-list,
-  .hero-actions {
-    justify-content: center;
+  .hero-tagline {
+    margin-inline: 0;
+    max-width: none;
+  }
+
+  .hero-body {
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero-summary,
+  .hero-highlights,
+  .hero-open {
+    max-width: none;
+  }
+
+  .hero-highlights {
+    margin-inline: 0;
   }
 
   .availability-list {
-    display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    flex: 1 1 calc(50% - 0.375rem);
+    min-width: min(100%, 10.5rem);
+  }
+
+  .hero-actions .btn-ghost {
+    flex-basis: 100%;
   }
 }
 

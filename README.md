@@ -48,7 +48,7 @@ Then visit `http://localhost:8080`.
    copy js\form-config.example.js js\form-config.js
    ```  
    Edit `js/form-config.js` and paste your key (this file is not pushed to GitHub).
-4. In Web3Forms dashboard, allow domain: `icygen.github.io`
+4. In Web3Forms dashboard, allow domain: `genreivargas.github.io`
 
 ## Customize
 

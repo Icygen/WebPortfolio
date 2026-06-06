@@ -40,7 +40,7 @@ function Draw-PortfolioShot {
   $g.FillEllipse([System.Drawing.Brushes]::Gold, 34, 16, 12, 12)
   $g.FillEllipse([System.Drawing.Brushes]::LightGreen, 52, 16, 12, 12)
   $g.DrawString(
-    "icygen.github.io/WebPortfolio/",
+    "genreivargas.github.io/WebPortfolio/",
     (Get-Font 9),
     [System.Drawing.Brushes]::LightGray,
     100,

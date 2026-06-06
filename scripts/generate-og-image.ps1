@@ -98,7 +98,7 @@ $g.FillRectangle((New-Object System.Drawing.SolidBrush ([System.Drawing.Color]::
 $g.DrawRectangle((New-Object System.Drawing.Pen ([System.Drawing.Color]::FromArgb(16, 185, 129), 1)), $badgeRect)
 $g.DrawString("Open to work", (Get-Font 18 -Bold), (New-Object System.Drawing.SolidBrush ([System.Drawing.Color]::FromArgb(6, 95, 70))), 388, 412)
 
-$g.DrawString("icygen.github.io/WebPortfolio", (Get-Font 18), (New-Object System.Drawing.SolidBrush $accent), 360, 490)
+$g.DrawString("genreivargas.github.io/WebPortfolio", (Get-Font 18), (New-Object System.Drawing.SolidBrush $accent), 360, 490)
 
 $g.Dispose()
 Save-Jpeg $bmp $out
